@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Task from '../components/taskDisplay'; 
+import Task from '../components/taskDisplay';
+import AddTask from '../components/addTask'; 
 //import reactLogo from './assets/react.svg';
 //import viteLogo from './vite.svg';
 //import './App.css';
@@ -18,7 +19,7 @@ function App() {
 
       return (
         <div>
-          <h1>Tasks</h1>
+          <AddTask />
           {tasks.map((task, index) => (
             <Task key={index} title={task.title} description={task.description} />
           ))}
